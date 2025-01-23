@@ -2,12 +2,19 @@
 
 import { motion } from "framer-motion";
 
-
-
-const stats = [
-    { label: "Transactions every 24 hours", value: "44 million" },
-    { label: "Assets under holding", value: "$119 trillion" },
-    { label: "New users annually", value: "46,000" },
+const benefits = [
+    {
+        feature: "Model Context Protocol (MACP)",
+        benefit: "Ads adapt to user intent—no more guessing."
+    },
+    {
+        feature: "Permissionless Ad Auctions",
+        benefit: "Anyone can bid for ad space, creating fair competition and higher payouts."
+    },
+    {
+        feature: "Incentive-Aligned Metrics",
+        benefit: "Earn more when users engage—we profit only when you do."
+    }
 ];
 
 export default function Vision() {
@@ -41,7 +48,7 @@ export default function Vision() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl"
                         >
-                            Vision
+                            The Problem
                         </motion.h2>
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <motion.div
@@ -51,20 +58,35 @@ export default function Vision() {
                                 className="lg:w-full lg:max-w-2xl lg:flex-auto"
                             >
                                 <p className="text-xl/8 text-gray-300">
-                                    Aliquet nec orci mattis amet quisque ullamcorper neque,
-                                    nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-                                    aliquam. Quisque id at vitae feugiat egestas ac. Diam
-                                    nulla orci at in viverra scelerisque eget. Eleifend
-                                    egestas fringilla sapien.
+                                    AI agents struggle to monetize without disrupting user trust or experience.
                                 </p>
-                                <p className="mt-10 max-w-xl text-base/7 text-gray-300">
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                                    eget risus enim. Mattis mauris semper sed amet vitae sed
-                                    turpis id. Id dolor praesent donec est. Odio penatibus
-                                    risus viverra tellus varius sit neque erat velit. Faucibus
-                                    commodo massa rhoncus, volutpat. Dignissim sed eget risus
-                                    enim. Mattis mauris semper sed amet vitae sed turpis id.
-                                </p>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.4 }}
+                                    className="mt-8"
+                                >
+                                    <h3 className="text-2xl font-semibold text-white mb-4">The Pain</h3>
+                                    <p className="text-gray-300">
+                                        "Generic ads ruin AI interactions. Users hate irrelevance, advertisers waste budgets, and developers lose revenue."
+                                    </p>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.5 }}
+                                    className="mt-8"
+                                >
+                                    <h3 className="text-2xl font-semibold text-white mb-4">Our Solution</h3>
+                                    <p className="text-gray-300">
+                                        WarpAds uses LLM-powered context to serve ads that feel like helpful suggestions, not interruptions.
+                                    </p>
+                                    <ul className="mt-4 space-y-4 text-gray-300">
+                                        <li>• For Users: Ads match their real-time needs (e.g., DeFi tips → hardware wallet promo).</li>
+                                        <li>• For Agents: Earn rewards via the open-auction protocol.</li>
+                                        <li>• For Advertisers: Target high-intent moments in AI-driven conversations.</li>
+                                    </ul>
+                                </motion.div>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
@@ -72,23 +94,31 @@ export default function Vision() {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="lg:flex lg:flex-auto lg:justify-center"
                             >
-                                <dl className="w-64 space-y-8 xl:w-80">
-                                    {stats.map((stat, index) => (
+                                <dl className="w-full space-y-8">
+                                    <motion.h3
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.6 }}
+                                        className="text-2xl font-semibold text-white mb-6"
+                                    >
+                                        Benefits
+                                    </motion.h3>
+                                    {benefits.map((item, index) => (
                                         <motion.div
-                                            key={stat.label}
+                                            key={item.feature}
                                             initial={{ opacity: 0, y: 20 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{
                                                 duration: 0.5,
-                                                delay: 0.5 + index * 0.1,
+                                                delay: 0.7 + index * 0.1,
                                             }}
-                                            className="flex flex-col-reverse gap-y-4"
+                                            className="flex flex-col gap-y-2 border-l-2 border-gray-600 pl-4"
                                         >
-                                            <dt className="text-base/7 text-gray-100">
-                                                {stat.label}
+                                            <dt className="text-lg font-medium text-white">
+                                                {item.feature}
                                             </dt>
-                                            <dd className="text-5xl font-semibold tracking-tight text-gray-400">
-                                                {stat.value}
+                                            <dd className="text-base text-gray-300">
+                                                {item.benefit}
                                             </dd>
                                         </motion.div>
                                     ))}

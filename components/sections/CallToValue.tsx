@@ -5,21 +5,21 @@ import { CloudUploadIcon, LockIcon, ServerIcon } from "lucide-react";
 
 const features = [
     {
-        name: "Push to deploy.",
+        name: "For Developers",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+            "Integrate WarpAds in 3 lines of code—start earning from day one.",
         icon: CloudUploadIcon,
     },
     {
-        name: "SSL certificates.",
+        name: "For Advertisers",
         description:
-            "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+            "Target users where they're most engaged: inside AI conversations.",
         icon: LockIcon,
     },
     {
-        name: "Database backups.",
+        name: "Smart Adaptation",
         description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
+            "Our AI-powered system automatically optimizes ad placement and targeting for maximum engagement.",
         icon: ServerIcon,
     },
 ];
@@ -42,7 +42,7 @@ export default function CallToValue() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl"
                     >
-                        Boost your visibility. Start advertising with us.
+                        Earn More with Ads That Adapt to Your Users' Needs
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

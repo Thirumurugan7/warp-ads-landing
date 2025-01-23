@@ -8,7 +8,7 @@ export default function HeroSection() {
     return <HeroWrapper>
         <div className="relative isolate pt-14">
             <div
-                className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-20"
                 aria-hidden="true"
             >
                 <div
@@ -20,7 +20,7 @@ export default function HeroSection() {
                 />
             </div>
 
-            <div className="py-24 sm:py-32 lg:pb-40">
+            <div className="py-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
                             }}
                             className="text-balance text-5xl font-semibold tracking-tight text-slate-200 sm:text-7xl"
                         >
-                            OpenAds protocol for web3 social
+                            open ads protocol for new internet
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -46,9 +46,8 @@ export default function HeroSection() {
                             transition={{ delay: 0.5, duration: 0.8 }}
                             className="mt-8 text-pretty text-lg font-medium text-slate-400 sm:text-xl"
                         >
-                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                            qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                            occaecat.
+                            WarpAds is the open protocol for AI agents to embed ads that users want to engage with.
+                            Boost revenue, stay permissionless, and align incentives across the agentic ecosystem.
                         </motion.p>
 
                         <motion.div
