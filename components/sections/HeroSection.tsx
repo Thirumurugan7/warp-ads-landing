@@ -1,6 +1,6 @@
 'use client'
 
-import HeroWrapper from "./HeroWrapper";
+import HeroWrapper from "@/components/Sections/HeroWrapper";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 

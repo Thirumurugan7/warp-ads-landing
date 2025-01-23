@@ -10,44 +10,53 @@ import Image from "next/image";
 
 const data: { title: string; content: React.ReactNode }[] = [
     {
-        title: "Q4 2024",
+        title: "Blockchain payment protocol for all advertising",
         content: (
             <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                <p className="text-zinc-100 text-3xl font-bold mb-8">
                     Full-scale launch of WarpAds platform with enterprise partnerships and global rollout
                 </p>
                 <div className="mb-8">
                     <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-                        ✅ Enterprise integration suite
-                        <motion.img
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.8, delay: 0.4 }}
+                        ✅ Multi-chain support for payments
+                        <Image
                             alt="Product screenshot"
                             src="/assets/productpic.png"
                             width={2432}
                             height={1442}
-                            className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
+                            className="max-w-xl mb-6"
                         />
                     </div>
                     <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-                        ✅ Multi-chain support for payments
-                    </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
                         ✅ Advanced analytics dashboard
+                        <Image
+                            alt="Product screenshot"
+                            src="/assets/productpic.png"
+                            width={2432}
+                            height={1442}
+                            className="max-w-xl mb-6"
+                        />
                     </div>
                     <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
                         ✅ AI model optimization v2.0
+                        <Image
+                            alt="Product screenshot"
+                            src="/assets/productpic.png"
+                            width={2432}
+                            height={1442}
+                            className="max-w-xl mb-6"
+                        />
                     </div>
                 </div>
+
             </div>
         ),
     },
     {
-        title: "Q3 2024",
+        title: "Powering worldwide ads",
         content: (
             <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                <p className="text-zinc-100 text-lg font-bold mb-8">
                     Beta launch with early adopters and key partnerships
                 </p>
                 <div className="mb-8">
@@ -68,10 +77,10 @@ const data: { title: string; content: React.ReactNode }[] = [
         ),
     },
     {
-        title: "Q2 2024",
+        title: "Developer-friendly, open-source SDK",
         content: (
             <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+                <p className="text-zinc-100 text-lg font-bold mb-8">
                     Development of core platform features and infrastructure
                 </p>
                 <div className="mb-8">
@@ -89,6 +98,24 @@ const data: { title: string; content: React.ReactNode }[] = [
                     </div>
                     <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
                         ✅ Technical whitepaper release
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        title: "Serve any ad, anywhere",
+        content: (
+            <div>
+                <p className="text-zinc-100 text-lg font-bold mb-8">
+                    Development of core platform features and infrastructure
+                </p>
+                <div className="mb-8">
+                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                        ✅ Model Context Protocol (MACP) v1
+                    </div>
+                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                        ✅ Ad auction smart contracts
                     </div>
                 </div>
             </div>
