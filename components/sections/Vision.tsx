@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import Tweets from "@/components/Sections/Tweets";
+import Tweets from "@/components/sections/Tweets";
 
 const benefits = [
     {
@@ -72,7 +72,7 @@ export default function Vision() {
                                 >
                                     <h3 className="text-2xl font-semibold text-white mb-4">The Pain</h3>
                                     <p className="text-gray-300">
-                                        "Generic ads ruin AI interactions. Users hate irrelevance, advertisers waste budgets, and developers lose revenue."
+                                        &quot;Generic ads ruin AI interactions. Users hate irrelevance, advertisers waste budgets, and developers lose revenue.&quot;
                                     </p>
                                 </motion.div>
                                 <motion.div

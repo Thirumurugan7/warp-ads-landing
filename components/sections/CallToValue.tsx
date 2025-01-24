@@ -42,7 +42,7 @@ export default function CallToValue() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl"
                     >
-                        Earn More with Ads That Adapt to Your Users' Needs
+                        Earn More with Ads That Adapt to Your Users&apos; Needs
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

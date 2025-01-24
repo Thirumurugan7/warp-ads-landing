@@ -46,7 +46,9 @@ export const Tweets = ({
 
     useEffect(() => {
         addAnimation();
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+
     const [start, setStart] = useState(false);
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
@@ -107,7 +109,7 @@ export const Tweets = ({
                         pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
                 >
-                    {items.map((item, idx) => (
+                    {items.map((item) => (
                         <Image
                             alt="Product screenshot"
                             src={item.image}

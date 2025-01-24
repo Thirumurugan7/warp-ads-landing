@@ -6,7 +6,6 @@ import {
     motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 const data: { title: string; content: React.ReactNode }[] = [
     {
