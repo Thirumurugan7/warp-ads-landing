@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
+import Tweets from "@/components/Sections/Tweets";
 
 const benefits = [
     {
@@ -19,6 +20,8 @@ const benefits = [
 
 export default function Vision() {
     return <div className="mx-auto max-w-full sm:px-6 lg:px-8">
+
+        <Tweets />
         <div className="relative isolate overflow-hidden px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
             {/* Decorative blob background for Vision */}
             <div

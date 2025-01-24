@@ -21,7 +21,7 @@ const data: { title: string; content: React.ReactNode }[] = [
                         ✅ Multi-chain support for payments
                         <Image
                             alt="Product screenshot"
-                            src="/assets/productpic.png"
+                            src="/assets/Tweet1.png"
                             width={2432}
                             height={1442}
                             className="max-w-xl mb-6"
@@ -31,7 +31,7 @@ const data: { title: string; content: React.ReactNode }[] = [
                         ✅ Advanced analytics dashboard
                         <Image
                             alt="Product screenshot"
-                            src="/assets/productpic.png"
+                            src="/assets/Tweet2.png"
                             width={2432}
                             height={1442}
                             className="max-w-xl mb-6"
@@ -41,7 +41,7 @@ const data: { title: string; content: React.ReactNode }[] = [
                         ✅ AI model optimization v2.0
                         <Image
                             alt="Product screenshot"
-                            src="/assets/productpic.png"
+                            src="/assets/Tweet3.png"
                             width={2432}
                             height={1442}
                             className="max-w-xl mb-6"
