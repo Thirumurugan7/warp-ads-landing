@@ -58,15 +58,15 @@ export default function HeroSection() {
                         >
                             <Button
                                 size="lg"
-                                className="bg-cyan-500 text-slate-950 hover:bg-cyan-400"
+                                className="bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400"
                             >
-                                Get started
+                                For Advertisers
                             </Button>
                             <a
                                 href="#"
                                 className="text-sm font-semibold leading-6 text-slate-200 hover:text-cyan-400 transition-colors"
                             >
-                                Learn more <span aria-hidden="true">→</span>
+                                For LLM Developers
                             </a>
                         </motion.div>
                     </motion.div>

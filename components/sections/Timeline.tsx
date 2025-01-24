@@ -13,39 +13,21 @@ const data: { title: string; content: React.ReactNode }[] = [
         title: "Blockchain payment protocol for all advertising",
         content: (
             <div>
-                <p className="text-zinc-100 text-3xl font-bold mb-8">
+                <p className="text-zinc-300 text-3xl font-medium mb-8">
                     Full-scale launch of WarpAds platform with enterprise partnerships and global rollout
                 </p>
-                <div className="mb-8">
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                <div className="mb-8 text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Multi-chain support for payments
-                        <Image
-                            alt="Product screenshot"
-                            src="/assets/Tweet1.png"
-                            width={2432}
-                            height={1442}
-                            className="max-w-xl mb-6"
-                        />
+
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Advanced analytics dashboard
-                        <Image
-                            alt="Product screenshot"
-                            src="/assets/Tweet2.png"
-                            width={2432}
-                            height={1442}
-                            className="max-w-xl mb-6"
-                        />
+
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ AI model optimization v2.0
-                        <Image
-                            alt="Product screenshot"
-                            src="/assets/Tweet3.png"
-                            width={2432}
-                            height={1442}
-                            className="max-w-xl mb-6"
-                        />
+
                     </div>
                 </div>
 
@@ -56,20 +38,20 @@ const data: { title: string; content: React.ReactNode }[] = [
         title: "Powering worldwide ads",
         content: (
             <div>
-                <p className="text-zinc-100 text-lg font-bold mb-8">
+                <p className="text-zinc-300 text-3xl font-medium mb-8">
                     Beta launch with early adopters and key partnerships
                 </p>
-                <div className="mb-8">
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                <div className="mb-8 text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Open beta for advertisers
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Integration with major AI platforms
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Smart contract audit completion
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Performance metrics tracking
                     </div>
                 </div>
@@ -80,23 +62,23 @@ const data: { title: string; content: React.ReactNode }[] = [
         title: "Developer-friendly, open-source SDK",
         content: (
             <div>
-                <p className="text-zinc-100 text-lg font-bold mb-8">
+                <p className="text-zinc-300 text-3xl font-medium mb-8">
                     Development of core platform features and infrastructure
                 </p>
-                <div className="mb-8">
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                <div className="mb-8 text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Model Context Protocol (MACP) v1
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Ad auction smart contracts
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Developer SDK alpha
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Initial AI model training
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Technical whitepaper release
                     </div>
                 </div>
@@ -107,14 +89,14 @@ const data: { title: string; content: React.ReactNode }[] = [
         title: "Serve any ad, anywhere",
         content: (
             <div>
-                <p className="text-zinc-100 text-lg font-bold mb-8">
+                <p className="text-zinc-300 text-3xl font-medium mb-8">
                     Development of core platform features and infrastructure
                 </p>
-                <div className="mb-8">
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                <div className="mb-8 text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Model Context Protocol (MACP) v1
                     </div>
-                    <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                    <div className="flex gap-2 items-center">
                         ✅ Ad auction smart contracts
                     </div>
                 </div>
@@ -148,9 +130,9 @@ const Timeline = () => {
             className="w-full  dark:bg-neutral-950 font-sans md:px-10"
             ref={containerRef}
         >
-            <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-                <h2 className="text-6xl  mb-4 text-white max-w-4xl">
-                    How does it work?
+            <div className="max-w-7xl mx-auto pt-20 pb-10 px-4 md:px-8 lg:px-10">
+                <h2 className="text-6xl mb-4 font-bold text-zinc-200 max-w-4xl">
+                    how does it work?
                 </h2>
             </div>
 
@@ -161,19 +143,19 @@ const Timeline = () => {
                         className="flex justify-start pt-10 md:pt-40 md:gap-10"
                     >
                         <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-                            <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+                            <div className="h-5 absolute left-5 md:left-6 w-5 rounded-full bg-white flex items-center justify-center opacity-50">
+                                <div className="h-4 w-4 rounded-full bg-neutral-800 border border-neutral-700 p-2" />
                             </div>
-                            <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+                            <h3 className="hidden md:block text-lg md:pl-20 md:text-4xl font-light text-zinc-300">
                                 {item.title}
                             </h3>
                         </div>
 
                         <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                            <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                            <h3 className="md:hidden block text-lg mb-4 text-left font-bold text-zinc-300">
                                 {item.title}
                             </h3>
-                            {item.content}{" "}
+                            {item.content}
                         </div>
                     </div>
                 ))}

@@ -95,35 +95,27 @@ export const Tweets = ({
             <div
                 ref={containerRef}
                 className={cn(
-                    "scroller relative z-20 max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+                    "scroller relative pb-10 z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
                     className
                 )}
             >
                 <ul
                     ref={scrollerRef}
                     className={cn(
-                        "flex items-center min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+                        "flex items-center w-full shrink-0 flex-nowrap gap-5 py-4 min-w-full",
                         start && "animate-scroll ",
                         pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
                 >
                     {items.map((item, idx) => (
-                        <li
-                            className="max-w-full relative rounded-2xl flex-shrink-0 md:w-[450px]"
-                            style={{
-                                background:
-                                    "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-                            }}
+                        <Image
+                            alt="Product screenshot"
+                            src={item.image}
+                            width={2432}
+                            height={1442}
+                            className="p-3 w-[350px] max-w-full relative flex-shrink-0 mx-4 my-3 md:w-[550px] rounded-3xl shadow-2xl shadow-cyan-400"
                             key={item.name}
-                        >
-                            <Image
-                                alt="Product screenshot"
-                                src={item.image}
-                                width={2432}
-                                height={1442}
-                                className="max-w-xl mb-6"
-                            />
-                        </li>
+                        />
                     ))}
                 </ul>
             </div>
