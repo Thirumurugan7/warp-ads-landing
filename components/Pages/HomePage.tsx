@@ -1,11 +1,11 @@
 "use client";
 
-import Timeline from "@/components/Sections/Timeline";
-import NavSection from "@/components/Sections/NavSection";
-import CallToValue from "@/components/Sections/CallToValue";
-import Vision from "@/components/Sections/Vision";
-import Footer from "@/components/Sections/Footer";
-import HeroSection from "@/components/Sections/HeroSection";
+import Timeline from "@/components/sections/Timeline";
+import NavSection from "@/components/sections/NavSection";
+import CallToValue from "@/components/sections/CallToValue";
+import Vision from "@/components/sections/Vision";
+import Footer from "@/components/sections/Footer";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function HomePage() {
     return <div className="relative bg-slate-950 min-h-screen">

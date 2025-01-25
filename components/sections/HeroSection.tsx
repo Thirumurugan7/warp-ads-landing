@@ -1,6 +1,6 @@
 'use client'
 
-import HeroWrapper from "@/components/Sections/HeroWrapper";
+import HeroWrapper from "@/components/sections/HeroWrapper";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText, Sparkles } from "lucide-react";

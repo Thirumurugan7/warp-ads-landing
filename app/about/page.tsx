@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Blocks, Brain, Building2, Globe2, GraduationCap, Users } from "lucide-react";
 import Link from "next/link";
-import NavSection from "@/components/sections/NavSection";
+import NavSection from "@/components/sections/NavSection";   
 import Footer from "@/components/sections/Footer";
 
 const teamValues = [
