@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Target, Zap, Diamond, ArrowRight } from "lucide-react";
+import { Tweets } from "@/components/sections/Tweets";
 
 const benefits = [
     {
@@ -162,6 +163,35 @@ export default function Vision() {
                             </motion.div>
                         ))}
                     </div>
+                </motion.div>
+
+                {/* Tweets Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="mt-24"
+                >
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-sm font-medium mb-4">
+                            Community Feedback
+                        </span>
+                        <h3 className="text-3xl font-bold text-white">
+                            What People Are Saying
+                        </h3>
+                    </div>
+                    
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="relative rounded-2xl bg-slate-900/50 p-8 ring-1 ring-white/10"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-transparent opacity-50" />
+                        <div className="relative">
+                            <Tweets />
+                        </div>
+                    </motion.div>
                 </motion.div>
             </div>
         </div>
