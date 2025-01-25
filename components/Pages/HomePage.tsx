@@ -8,7 +8,7 @@ import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 
 export default function HomePage() {
-    return <div className="relative bg-slate-950 min-h-screen">
+    return <div className="relative bg-slate-950">
         <NavSection />
         <HeroSection />
         <CallToValue />
