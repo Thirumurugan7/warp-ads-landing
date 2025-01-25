@@ -3,6 +3,7 @@
 import HeroWrapper from "@/components/Sections/HeroWrapper";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ArrowRight, FileText, Sparkles } from "lucide-react";
 
 export default function HeroSection() {
     return <HeroWrapper>
@@ -20,14 +21,28 @@ export default function HeroSection() {
                 />
             </div>
 
-            <div className="py-12">
+            <div className="py-20 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="mx-auto max-w-2xl text-center"
+                        className="mx-auto max-w-3xl text-center"
                     >
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                            className="mb-8 flex justify-center"
+                        >
+                            <div className="inline-flex items-center gap-2 rounded-full bg-cyan-500/10 px-5 py-2 ring-1 ring-inset ring-cyan-500/20">
+                                <Sparkles className="h-4 w-4 text-cyan-400" />
+                                <span className="text-sm font-medium text-cyan-400">
+                                    Revolutionizing AI Advertising
+                                </span>
+                            </div>
+                        </motion.div>
+
                         <motion.h1
                             initial={{ opacity: 0.5, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -36,38 +51,46 @@ export default function HeroSection() {
                                 duration: 0.8,
                                 ease: "easeInOut",
                             }}
-                            className="text-balance text-5xl font-semibold tracking-tight text-slate-200 sm:text-7xl"
+                            className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
                         >
-                            open ads protocol for new internet
+                            <span className="block mb-4">The Open Protocol for</span>
+                            <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-cyan-300 text-transparent bg-clip-text">
+                                Next-Gen Advertising
+                            </span>
                         </motion.h1>
+
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5, duration: 0.8 }}
-                            className="mt-8 text-pretty text-lg font-medium text-slate-400 sm:text-xl"
+                            className="mt-8 text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto"
                         >
-                            WarpAds is the open protocol for AI agents to embed ads that users want to engage with.
-                            Boost revenue, stay permissionless, and align incentives across the agentic ecosystem.
+                            WarpAds seamlessly connects AI agents with relevant ads that users actually want to engage with. 
+                            Boost revenue while maintaining trust and alignment across the ecosystem.
                         </motion.p>
 
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.7, duration: 0.8 }}
-                            className="mt-10 flex items-center justify-center gap-x-6"
+                            className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
                         >
                             <Button
                                 size="lg"
-                                className="bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400"
+                                className="bg-cyan-500 text-slate-950 font-semibold hover:opacity-90 hover:bg-cyan-600 hover:text-white px-8 h-12 text-base w-full sm:w-auto transition-all duration-300"
                             >
-                                For Advertisers
+                                Get Started
+                                <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
-                            <a
-                                href="#"
-                                className="text-sm font-semibold leading-6 text-slate-200 hover:text-cyan-400 transition-colors"
+                            <Button
+                                variant="ghost"
+                                size="lg"
+                                className="bg-slate-800/40 text-slate-300 hover:bg-slate-800/60 hover:text-white px-8 h-12 text-base w-full sm:w-auto group flex items-center gap-2 transition-all duration-300 ring-1 ring-slate-700/50 hover:ring-cyan-500/30"
                             >
-                                For LLM Developers
-                            </a>
+                                <FileText className="h-4 w-4" />
+                                Documentation
+                                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                            </Button>
                         </motion.div>
                     </motion.div>
                 </div>
